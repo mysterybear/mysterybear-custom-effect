@@ -1,0 +1,38 @@
+{
+  "babelMacros": {
+    "twin": {
+      "preset": "stitches",
+      "stitchesConfig": "stitches.config.ts"
+    }
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@react-spring/three": "^9.2.4",
+    "@react-three/drei": "^7.5.0",
+    "@react-three/fiber": "^7.0.6",
+    "@stitches/react": "^0.2.2",
+    "@types/three": "^0.131.0",
+    "@use-gesture/react": "^10.0.0-beta.22",
+    "fp-ts": "^2.11.1",
+    "glsl-earth": "^1.0.2",
+    "glslify": "^7.1.1",
+    "glslify-loader": "^2.0.0",
+    "next": "latest",
+    "raw-loader": "^4.0.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "three": "^0.132.1"
+  },
+  "devDependencies": {
+    "@types/node": "^15.14.0",
+    "@types/react": "^17.0.13",
+    "babel-plugin-macros": "^3.1.0",
+    "tailwindcss": "^2.2.4",
+    "twin.macro": "^2.6.1",
+    "typescript": "^4.3.5"
+  }
+}
