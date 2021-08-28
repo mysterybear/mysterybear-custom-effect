@@ -3,7 +3,6 @@ import { useFrame, useThree } from "@react-three/fiber"
 import { useDrag } from "@use-gesture/react"
 import { pipe } from "fp-ts/lib/function"
 import { useRef } from "react"
-import "../materials/BasicShaderMaterial"
 import {
   AnimatedBasicShaderMaterial,
   BasicShaderMaterialImpl,
