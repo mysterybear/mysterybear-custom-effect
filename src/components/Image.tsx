@@ -12,12 +12,19 @@ type Props = MeshProps & {
   height?: number
 }
 
-const ImageBase = ({ src, width = 4, height = 3, ...rest }: Props) => {
+const ImageBase = ({
+  src,
+  width = 4,
+  height = 3,
+  children,
+  ...rest
+}: Props) => {
   const texture = useLoader(TextureLoader, src)
   return (
     <mesh {...rest}>
       <planeBufferGeometry args={[width, height]} />
       <meshBasicMaterial map={texture} side={DoubleSide} />
+      {children}
     </mesh>
   )
 }

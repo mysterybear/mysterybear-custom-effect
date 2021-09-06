@@ -1,13 +1,12 @@
-import { Uniform, Vector3 } from "three"
 import { BlendFunction, Effect } from "postprocessing"
-import fragmentShader from "./MyCustomEffect.frag.glsl"
 import { forwardRef, useMemo } from "react"
+import fragmentShader from "./MyCustomEffect.frag.glsl"
 
 class MyCustomEffectImpl extends Effect {
   constructor() {
     super("CustomEffect", fragmentShader, {
-      blendFunction: BlendFunction.Normal,
-      uniforms: new Map([["weights", new Uniform(new Vector3())]]),
+      blendFunction: BlendFunction.NORMAL,
+      uniforms: new Map([]),
     })
   }
 }

@@ -23,7 +23,7 @@ const imgSrc = `https://images.unsplash.com/photo-1627926076810-0c5d5cdcca61?cro
 const App = () => {
   return (
     <FullScreenDiv>
-      <Canvas>
+      <Canvas onCreated={({ gl }) => void gl.setClearColor("#494383", 1.0)}>
         <Image src={imgSrc} />
         <EffectComposer>
           <MyCustomEffect />
