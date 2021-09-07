@@ -20,6 +20,9 @@ declare module "postprocessing" {
     TextureDataType,
     Loader,
   } from "three"
+
+  export type OverrideMaterialManager = any
+
   /**
    * A color channel enumeration.
    * @property RED - Red.

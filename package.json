@@ -22,6 +22,7 @@
     "glsl-earth": "^1.0.2",
     "glslify": "^7.1.1",
     "glslify-loader": "^2.0.0",
+    "leva": "^0.9.13",
     "next": "latest",
     "postprocessing": "^6.22.3",
     "raw-loader": "^4.0.2",
