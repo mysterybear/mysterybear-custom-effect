@@ -23,7 +23,7 @@ const imgSrc = `https://images.unsplash.com/photo-1627926076810-0c5d5cdcca61?cro
 
 const App = () => {
   const props = useControls({
-    height: {
+    horizontalFOV: {
       min: 0,
       max: 1000,
       step: 1,
