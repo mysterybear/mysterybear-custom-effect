@@ -1,3 +1,5 @@
+import FishEyeEffect from "@/effects/FishEyeEffect"
+import GriddyEffect from "@/effects/GriddyEffect"
 import MyCustomEffect from "@/effects/MyCustomEffect"
 import { OrbitControls } from "@react-three/drei"
 import { Canvas } from "@react-three/fiber"
@@ -47,7 +49,8 @@ const App = () => {
       <Canvas onCreated={({ gl }) => void gl.setClearColor("#494383", 1.0)}>
         <Image src={imgSrc} />
         <EffectComposer>
-          <MyCustomEffect {...props} />
+          {/* <GriddyEffect /> */}
+          <FishEyeEffect />
         </EffectComposer>
         <OrbitControls />
       </Canvas>

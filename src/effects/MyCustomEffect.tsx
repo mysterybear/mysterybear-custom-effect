@@ -28,6 +28,7 @@ type Props = {
 const MyCustomEffect = forwardRef<JSX.IntrinsicElements["primitive"], Props>(
   ({ horizontalFOV = 140, cylindricalRatio = 2.0, strength = 0.5 }, ref) => {
     const camera = useThree((three) => three.camera) as PerspectiveCamera
+    console.log(camera.aspect, "aspect")
     const height = useMemo(
       () => Math.tan(MathUtils.degToRad(horizontalFOV) / 2) / camera.aspect,
       [horizontalFOV]
