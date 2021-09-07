@@ -7,8 +7,6 @@ varying vec3 vUV;    // output to interpolate over screen
 varying vec2 vUVDot; // output to interpolate over screen
 
 void mainSupport(const in vec2 uv) {
-  gl_Position = projectionMatrix * (modelViewMatrix * vec4(position, 1.0));
-
   float scaledHeight = strength * height;
   float cylAspectRatio = aspect * cylindricalRatio;
   float aspectDiagSq = aspect * aspect + 1.0;
